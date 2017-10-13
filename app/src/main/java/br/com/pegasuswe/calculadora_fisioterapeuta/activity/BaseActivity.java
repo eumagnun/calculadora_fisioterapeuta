@@ -49,6 +49,9 @@ public class BaseActivity extends AppCompatActivity {
                     share(shareString);
                 }
                 return true;
+            case R.id.action_info:
+                loadActivity(this, InfoActivity.class);
+                return true;
             default:
                 break;
         }

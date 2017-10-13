@@ -38,4 +38,10 @@
     <string name="frequencia_respirat_ria">Frequencia respiratória</string>
     <string name="volume_corrente_l">Volume corrente (L)</string>
     <string name="compartilhar">Compartilhar</string>
+    <string name="info">Info</string>
+    <string name="about_app">Aplicativo desenvolvido por: \nDaniel Amaral\nE-mail: eumagnun@gmail.com</string>
+    <string name="sobre_o_app_tile">Sobre o App</string>
+    <string name="observacao">Este aplicativo oferece cálculos voltados a área de fisioterápia porém não substitui o conhecimento de um profissional.  A qualquer momento um calculo pode vir a ser depreciado sem prévio aviso.  Em casos de divergências, ou quando estiver com alguma dúvida, a opinião de um profissional deverá prevalecer.\nFicarei grato se puder encaminhar suas sugestões </string>
+    <string name="importante">Importante</string>
+    <string name="build">Build 1.0 Data: 13/10/2017</string>
 </resources>

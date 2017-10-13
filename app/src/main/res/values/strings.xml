@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Calculadora-fisioterapeuta</string>
+    <string name="app_name">Fisio Calc</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -35,4 +35,6 @@
     <string name="pao2">PaO2</string>
     <string name="fio2">FiO2</string>
     <string name="fio2_desejada">FiO2 desejada</string>
+    <string name="frequencia_respirat_ria">Frequencia respiratória</string>
+    <string name="volume_corrente_l">Volume corrente (L)</string>
 </resources>

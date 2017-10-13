@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Calculadora-fisioterapeuta</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_base">BaseActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pimax">Pressão Inspiratória Máxima (P. I. máx)</string>
+    <string name="pemax">Pressão Expiratória Máxima – (P. E. máx)</string>
+    <string name="cep">Complacência Estática Pulmonar</string>
+    <string name="cdp">Complacência Dinâmica Pulmonar</string>
+    <string name="rsp">Resistência do Sistema Pulmonar</string>
+    <string name="io">Índice de Oxigenação (I.O)</string>
+    <string name="fio">Fração Inspirado de Oxigênio (FiO2)</string>
+    <string name="fr">Freqüência Respiratória (FR)</string>
+    <string name="irs">Índice de Respiração Superficial (Tobin )</string>
+    <string name="glasgow">Escala de Glasgow</string>
+    <string name="ObedeceComandos">Obedece Comandos</string>
+    <string name="LocalizaDor">Localiza Dor</string>
+    <string name="MovimentoRetirada">Movimento de Retirada</string>
+    <string name="FlexaoAnormal">Flexão Anormal</string>
+    <string name="ExtensaoAnormal">Extensão Anormal</string>
+    <string name="Nenhuma">Nenhuma</string>
+    <string name="escala_de_coma_de_glasgow">Escala de Coma de Glasgow</string>
+    <string name="volume_corrente">Volume Corrente</string>
+    <string name="p_plat">P. platô</string>
+    <string name="peep">PEEP</string>
+    <string name="p_pico">P. pico</string>
+    <string name="campos_obrigatorios">Todos os campos são obrigatórios!</string>
+    <string name="fluxo">Fluxo</string>
+</resources>

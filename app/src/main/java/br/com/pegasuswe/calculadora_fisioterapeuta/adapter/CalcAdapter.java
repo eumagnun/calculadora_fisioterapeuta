@@ -14,7 +14,10 @@ import br.com.pegasuswe.calculadora_fisioterapeuta.activity.ComplacenciaDinamica
 import br.com.pegasuswe.calculadora_fisioterapeuta.activity.ComplacenciaEstaticaActivity;
 import br.com.pegasuswe.calculadora_fisioterapeuta.R;
 import br.com.pegasuswe.calculadora_fisioterapeuta.activity.BaseActivity;
+import br.com.pegasuswe.calculadora_fisioterapeuta.activity.Fio2DesejadaActivity;
+import br.com.pegasuswe.calculadora_fisioterapeuta.activity.FrequenciaRespiratoriaActivity;
 import br.com.pegasuswe.calculadora_fisioterapeuta.activity.GlasgowActivity;
+import br.com.pegasuswe.calculadora_fisioterapeuta.activity.IndiceOxigenacaoActivity;
 import br.com.pegasuswe.calculadora_fisioterapeuta.activity.PeMaxActivity;
 import br.com.pegasuswe.calculadora_fisioterapeuta.activity.PiMaxActivity;
 import br.com.pegasuswe.calculadora_fisioterapeuta.activity.ResistenciaSistemaPulmonarActivity;
@@ -107,6 +110,17 @@ public class CalcAdapter extends RecyclerView.Adapter {
 
             }else if(tvCalcName.getText().toString().equals(context.getString(R.string.rsp))){
                 ((BaseActivity) context).loadActivity(((BaseActivity) context), ResistenciaSistemaPulmonarActivity.class);
+
+
+            }else if(tvCalcName.getText().toString().equals(context.getString(R.string.io))){
+                ((BaseActivity) context).loadActivity(((BaseActivity) context), IndiceOxigenacaoActivity.class);
+
+            }else if(tvCalcName.getText().toString().equals(context.getString(R.string.fio))){
+                ((BaseActivity) context).loadActivity(((BaseActivity) context), Fio2DesejadaActivity.class);
+
+            }else if(tvCalcName.getText().toString().equals(context.getString(R.string.fr))){
+                ((BaseActivity) context).loadActivity(((BaseActivity) context), FrequenciaRespiratoriaActivity.class);
+
 
 
             }else{

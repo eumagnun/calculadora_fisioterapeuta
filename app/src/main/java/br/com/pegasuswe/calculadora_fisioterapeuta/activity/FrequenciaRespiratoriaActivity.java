@@ -1,7 +1,5 @@
 package br.com.pegasuswe.calculadora_fisioterapeuta.activity;
 
-import android.os.Binder;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -14,16 +12,16 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class ResistenciaSistemaPulmonarActivity extends BaseActivity {
+public class FrequenciaRespiratoriaActivity extends BaseActivity {
 
-    @BindView(R.id.etPico)
-    EditText etPico;
+    @BindView(R.id.etPaco2Conhecida)
+    EditText etPaco2Conhecida;
 
-    @BindView(R.id.etPlato)
-    EditText etPlato;
+    @BindView(R.id.etFrConhecida)
+    EditText etFrConhecida;
 
-    @BindView(R.id.etFluxo)
-    EditText etFluxo;
+    @BindView(R.id.etPaco2Desejada)
+    EditText etPaco2Desejada;
 
     @BindView(R.id.btCalc)
     Button btCalc;
@@ -34,23 +32,23 @@ public class ResistenciaSistemaPulmonarActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_resistencia_sistema_pulmonar);
+        setContentView(R.layout.activity_frequencia_respiratoria);
         ButterKnife.bind(this);
     }
 
     @OnClick(R.id.btCalc)
     public void calc(View view) {
-        if (etFluxo.getText().toString().equals("") ||
-                etPlato.getText().toString().equals("") ||
-                etPico.getText().toString().equals("")) {
+        if (etPaco2Conhecida.getText().toString().equals("") ||
+                etPaco2Desejada.getText().toString().equals("") ||
+                etFrConhecida.getText().toString().equals("")) {
 
             Toast.makeText(this, "Todos os campos são obrigatórios!", Toast.LENGTH_SHORT).show();
         } else {
-            double pico = Double.parseDouble(etPico.getText().toString());
-            double plato = Double.parseDouble(etPlato.getText().toString());
-            double fluxo = Double.parseDouble(etFluxo.getText().toString());
+            double paco2Conhecida = Double.parseDouble(etPaco2Conhecida.getText().toString());
+            double fFrConhecida = Double.parseDouble(etFrConhecida.getText().toString());
+            double paco2Desejada = Double.parseDouble(etPaco2Desejada.getText().toString());
 
-            double result =(pico - plato)/fluxo;
+            double result =(paco2Conhecida * fFrConhecida)/paco2Desejada;
             tvResult.setText(String.valueOf(result));
         }
 

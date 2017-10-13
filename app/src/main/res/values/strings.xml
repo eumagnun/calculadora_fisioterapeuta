@@ -15,7 +15,7 @@
     <string name="cdp">Complacência Dinâmica Pulmonar</string>
     <string name="rsp">Resistência do Sistema Pulmonar</string>
     <string name="io">Índice de Oxigenação (I.O)</string>
-    <string name="fio">Fração Inspirado de Oxigênio (FiO2)</string>
+    <string name="fio">FiO2 Desejada</string>
     <string name="fr">Freqüência Respiratória (FR)</string>
     <string name="irs">Índice de Respiração Superficial (Tobin )</string>
     <string name="glasgow">Escala de Glasgow</string>
@@ -32,4 +32,7 @@
     <string name="p_pico">P. pico</string>
     <string name="campos_obrigatorios">Todos os campos são obrigatórios!</string>
     <string name="fluxo">Fluxo</string>
+    <string name="pao2">PaO2</string>
+    <string name="fio2">FiO2</string>
+    <string name="fio2_desejada">FiO2 desejada</string>
 </resources>

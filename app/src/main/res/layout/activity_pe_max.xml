@@ -123,12 +123,25 @@
 
             <Button
                 android:id="@+id/btCalc"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="?android:attr/selectableItemBackground"
+                android:background="@color/colorPrimary"
+                android:textColor="#FFF"
                 android:text="Calcular"
                 android:textAllCaps="false"
                 android:textSize="22dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="Informação: "
+                android:textStyle="bold"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pressao_expiratoria_maxima"/>
 
         </LinearLayout>
     </RelativeLayout>

@@ -171,9 +171,10 @@
 
             <Button
                 android:id="@+id/btCalc"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="?android:attr/selectableItemBackground"
+                android:background="@color/colorPrimary"
+                android:textColor="#FFF"
                 android:text="Calcular"
                 android:textAllCaps="false"
                 android:textSize="22dp" />
@@ -181,6 +182,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:paddingTop="10dp"
                 android:text="Referência:"
                 android:textStyle="bold"/>
 
@@ -194,13 +196,26 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="09 - 12 = Moderado"
-                android:textColor="#f2eb22"/>
+                android:textColor="#cfca28"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="13 - 15 = Leve"
                 android:textColor="#58c65b"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="Informação: "
+                android:textStyle="bold"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitStart"
+                android:src="@drawable/escala_glagow"/>
 
         </LinearLayout>
     </RelativeLayout>

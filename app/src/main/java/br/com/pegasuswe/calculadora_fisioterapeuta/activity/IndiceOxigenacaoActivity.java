@@ -1,7 +1,5 @@
 package br.com.pegasuswe.calculadora_fisioterapeuta.activity;
 
-import android.os.Binder;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -14,16 +12,13 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class ResistenciaSistemaPulmonarActivity extends BaseActivity {
+public class IndiceOxigenacaoActivity extends BaseActivity {
 
-    @BindView(R.id.etPico)
-    EditText etPico;
+    @BindView(R.id.etPao2)
+    EditText etPao2;
 
-    @BindView(R.id.etPlato)
-    EditText etPlato;
-
-    @BindView(R.id.etFluxo)
-    EditText etFluxo;
+    @BindView(R.id.etFio2)
+    EditText etFio2;
 
     @BindView(R.id.btCalc)
     Button btCalc;
@@ -34,23 +29,21 @@ public class ResistenciaSistemaPulmonarActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_resistencia_sistema_pulmonar);
+        setContentView(R.layout.activity_indice_oxigenacao);
         ButterKnife.bind(this);
     }
 
     @OnClick(R.id.btCalc)
     public void calc(View view) {
-        if (etFluxo.getText().toString().equals("") ||
-                etPlato.getText().toString().equals("") ||
-                etPico.getText().toString().equals("")) {
+        if (etFio2.getText().toString().equals("") ||
+                etPao2.getText().toString().equals("")) {
 
             Toast.makeText(this, "Todos os campos são obrigatórios!", Toast.LENGTH_SHORT).show();
         } else {
-            double pico = Double.parseDouble(etPico.getText().toString());
-            double plato = Double.parseDouble(etPlato.getText().toString());
-            double fluxo = Double.parseDouble(etFluxo.getText().toString());
+            double fio2 = Double.parseDouble(etFio2.getText().toString());
+            double pao2 = Double.parseDouble(etPao2.getText().toString());
 
-            double result =(pico - plato)/fluxo;
+            double result =(pao2/fio2);
             tvResult.setText(String.valueOf(result));
         }
 

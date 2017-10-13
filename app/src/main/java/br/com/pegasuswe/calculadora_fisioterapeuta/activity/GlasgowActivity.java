@@ -15,7 +15,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class GlasgowActivity extends AppCompatActivity {
+public class GlasgowActivity extends BaseActivity {
 
     @BindView(R.id.etAberturaOcular)
     EditText etAberturaOcular;
@@ -164,6 +164,8 @@ public class GlasgowActivity extends AppCompatActivity {
         } else {
             int result = aberturaOcularScore + respostaMotoraScore + respostaVerbalScore;
             tvResult.setText(String.valueOf(result));
+
+            shareString = getString(R.string.glasgow)+" = "+String.valueOf(result);
         }
     }
 

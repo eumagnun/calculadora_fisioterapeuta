@@ -45,6 +45,8 @@ public class IndiceOxigenacaoActivity extends BaseActivity {
 
             double result =(pao2/fio2);
             tvResult.setText(String.valueOf(result));
+
+            shareString = getString(R.string.io)+" = "+String.valueOf(result);
         }
 
     }

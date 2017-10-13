@@ -14,7 +14,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class ComplacenciaEstaticaActivity extends AppCompatActivity {
+public class ComplacenciaEstaticaActivity extends BaseActivity {
 
     @BindView(R.id.etVolumeCorrent)
     EditText etVolumeCorrent;
@@ -52,6 +52,8 @@ public class ComplacenciaEstaticaActivity extends AppCompatActivity {
 
             double result = volumeCorrente / (plato - PEEP);
             tvResult.setText(String.valueOf(result));
+
+            shareString = getString(R.string.cep)+" = "+String.valueOf(result);
         }
 
     }

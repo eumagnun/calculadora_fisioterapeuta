@@ -50,6 +50,8 @@ public class FrequenciaRespiratoriaActivity extends BaseActivity {
 
             double result =(paco2Conhecida * fFrConhecida)/paco2Desejada;
             tvResult.setText(String.valueOf(result));
+
+            shareString = getString(R.string.fr)+" = "+String.valueOf(result);
         }
 
     }

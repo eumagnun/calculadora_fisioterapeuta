@@ -74,12 +74,17 @@ public class PeMaxActivity extends BaseActivity {
             if (scMasc.isChecked()) {
 
                 Double r = ((0.81 * age) + 165.3);
-                tvResult.setText(String.valueOf(Math.round(r)));
+                String result = String.valueOf(Math.round(r));
+                tvResult.setText(result);
+                shareString = getString(R.string.cdp) + " = " + String.valueOf(result);
 
             } else if (scFem.isChecked()) {
 
                 Double r = ((0.61 * age) + 115.6);
-                tvResult.setText(String.valueOf(Math.round(r)));
+                String result = String.valueOf(Math.round(r));
+                tvResult.setText(result);
+                shareString = getString(R.string.pemax) + " = " + String.valueOf(result);
+
             }
         }
     }

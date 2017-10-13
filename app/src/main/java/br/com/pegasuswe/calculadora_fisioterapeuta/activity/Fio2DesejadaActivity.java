@@ -50,6 +50,8 @@ public class Fio2DesejadaActivity extends BaseActivity {
 
             double result =(pao2Desejada * fio2Conhecida)/pao2Conhecida;
             tvResult.setText(String.valueOf(result));
+
+            shareString = getString(R.string.fio)+" = "+String.valueOf(result);
         }
 
     }

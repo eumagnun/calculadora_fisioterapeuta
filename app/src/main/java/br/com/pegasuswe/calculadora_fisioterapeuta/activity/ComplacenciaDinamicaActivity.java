@@ -3,6 +3,7 @@ package br.com.pegasuswe.calculadora_fisioterapeuta.activity;
 import android.os.Binder;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -14,7 +15,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class ComplacenciaDinamicaActivity extends AppCompatActivity {
+public class ComplacenciaDinamicaActivity extends BaseActivity {
 
     @BindView(R.id.etVolumeCorrent)
     EditText etVolumeCorrent;
@@ -52,6 +53,8 @@ public class ComplacenciaDinamicaActivity extends AppCompatActivity {
 
             double result = volumeCorrente / (pico - PEEP);
             tvResult.setText(String.valueOf(result));
+
+            shareString = getString(R.string.cdp)+" = "+String.valueOf(result);
         }
 
     }

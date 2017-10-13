@@ -37,4 +37,5 @@
     <string name="fio2_desejada">FiO2 desejada</string>
     <string name="frequencia_respirat_ria">Frequencia respiratória</string>
     <string name="volume_corrente_l">Volume corrente (L)</string>
+    <string name="compartilhar">Compartilhar</string>
 </resources>

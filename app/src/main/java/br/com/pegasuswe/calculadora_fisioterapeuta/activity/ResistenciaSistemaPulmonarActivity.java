@@ -52,6 +52,8 @@ public class ResistenciaSistemaPulmonarActivity extends BaseActivity {
 
             double result =(pico - plato)/fluxo;
             tvResult.setText(String.valueOf(result));
+
+            shareString = getString(R.string.rsp) + " = " + String.valueOf(result);
         }
 
     }

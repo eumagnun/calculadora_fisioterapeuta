@@ -45,6 +45,8 @@ public class IndiceTobinActivity extends BaseActivity {
 
             double result = (frequenciaRespiratoria / volumeCorrenteL);
             tvResult.setText(String.valueOf(result));
+
+            shareString = getString(R.string.irs)+" = "+String.valueOf(result);
         }
 
     }

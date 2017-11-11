@@ -17,7 +17,7 @@
     <string name="io">Índice de Oxigenação (I.O)</string>
     <string name="fio">FiO2 Desejada</string>
     <string name="fr">Freqüência Respiratória (FR)</string>
-    <string name="irs">Índice de Respiração Superficial (Tobin )</string>
+    <string name="irs">Índice de Respiração Superficial (Tobin)</string>
     <string name="glasgow">Escala de Glasgow</string>
     <string name="ObedeceComandos">Obedece Comandos</string>
     <string name="LocalizaDor">Localiza Dor</string>

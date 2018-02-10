@@ -10,6 +10,7 @@ import android.widget.Toast;
 
 import java.util.List;
 
+import br.com.pegasuswe.calculadora_fisioterapeuta.activity.CapacidadeVitalActivity;
 import br.com.pegasuswe.calculadora_fisioterapeuta.activity.ComplacenciaDinamicaActivity;
 import br.com.pegasuswe.calculadora_fisioterapeuta.activity.ComplacenciaEstaticaActivity;
 import br.com.pegasuswe.calculadora_fisioterapeuta.R;
@@ -122,7 +123,11 @@ public class CalcAdapter extends RecyclerView.Adapter {
             }else if(tvCalcName.getText().toString().equals(context.getString(R.string.irs))){
                 ((BaseActivity) context).loadActivity(((BaseActivity) context), IndiceTobinActivity.class);
 
+            }else if(tvCalcName.getText().toString().equals(context.getString(R.string.capacidade_vital))){
+                ((BaseActivity) context).loadActivity(((BaseActivity) context), CapacidadeVitalActivity.class);
 
+            }else if(tvCalcName.getText().toString().equals(context.getString(R.string.fr))){
+                ((BaseActivity) context).loadActivity(((BaseActivity) context), FrequenciaRespiratoriaActivity.class);
 
             }else{
                 Toast.makeText(context, "Em desenvolvimento", Toast.LENGTH_SHORT).show();

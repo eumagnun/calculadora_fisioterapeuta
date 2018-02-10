@@ -43,5 +43,6 @@
     <string name="sobre_o_app_tile">Sobre o App</string>
     <string name="observacao">Este aplicativo oferece cálculos voltados a área de fisioterápia porém não substitui o conhecimento de um profissional.  A qualquer momento um calculo pode vir a ser depreciado sem prévio aviso.  Em casos de divergências, ou quando estiver com alguma dúvida, a opinião de um profissional deverá prevalecer.\nFicarei grato se puder encaminhar suas sugestões </string>
     <string name="importante">Importante</string>
-    <string name="build">Build 1.0 Data: 13/10/2017</string>
+    <string name="build">Build 1.1 Data: 10/02/2018</string>
+    <string name="capacidade_vital">Capacidade Vital</string>
 </resources>

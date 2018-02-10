@@ -4,7 +4,6 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
-import android.view.MenuItem;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -36,6 +35,7 @@ public class MainActivity extends BaseActivity {
         listaFormulas.add(getString(R.string.fio));
         listaFormulas.add(getString(R.string.fr));
         listaFormulas.add(getString(R.string.irs));
+        listaFormulas.add(getString(R.string.capacidade_vital));
 
         CalcAdapter calcAdapter = new CalcAdapter(this, listaFormulas);
 

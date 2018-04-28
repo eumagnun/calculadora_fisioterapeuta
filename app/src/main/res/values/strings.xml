@@ -45,4 +45,5 @@
     <string name="importante">Importante</string>
     <string name="build">Build 1.1 Data: 10/02/2018</string>
     <string name="capacidade_vital">Capacidade Vital</string>
+    <string name="pesoPredito">Peso Predito</string>
 </resources>

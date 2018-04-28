@@ -21,6 +21,7 @@ import br.com.pegasuswe.calculadora_fisioterapeuta.activity.GlasgowActivity;
 import br.com.pegasuswe.calculadora_fisioterapeuta.activity.IndiceOxigenacaoActivity;
 import br.com.pegasuswe.calculadora_fisioterapeuta.activity.IndiceTobinActivity;
 import br.com.pegasuswe.calculadora_fisioterapeuta.activity.PeMaxActivity;
+import br.com.pegasuswe.calculadora_fisioterapeuta.activity.PesoPreDitoActivity;
 import br.com.pegasuswe.calculadora_fisioterapeuta.activity.PiMaxActivity;
 import br.com.pegasuswe.calculadora_fisioterapeuta.activity.ResistenciaSistemaPulmonarActivity;
 import butterknife.BindView;
@@ -128,6 +129,9 @@ public class CalcAdapter extends RecyclerView.Adapter {
 
             }else if(tvCalcName.getText().toString().equals(context.getString(R.string.fr))){
                 ((BaseActivity) context).loadActivity(((BaseActivity) context), FrequenciaRespiratoriaActivity.class);
+
+            }else if(tvCalcName.getText().toString().equals(context.getString(R.string.pesoPredito))){
+                ((BaseActivity) context).loadActivity(((BaseActivity) context), PesoPreDitoActivity.class);
 
             }else{
                 Toast.makeText(context, "Em desenvolvimento", Toast.LENGTH_SHORT).show();

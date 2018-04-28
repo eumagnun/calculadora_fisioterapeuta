@@ -11,7 +11,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#3F52B5"
+        android:background="@color/colorPrimary"
         android:orientation="horizontal">
 
 
@@ -20,6 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="23dp"
+            android:layout_marginEnd="23dp"
             android:orientation="vertical">
 
             <LinearLayout
@@ -39,20 +40,7 @@
                     android:textColor="@color/colorTextPurple"
                     android:textSize="18sp" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight=".8"
-                    android:gravity="end|center_vertical"
-                    android:orientation="horizontal"
-                    android:paddingEnd="10dp">
 
-                    <ImageView
-                        android:layout_width="20dp"
-                        android:layout_height="30dp"
-                        android:background="@drawable/ic_right_arrow" />
-
-                </LinearLayout>
 
             </LinearLayout>
 

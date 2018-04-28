@@ -37,6 +37,7 @@ public class MainActivity extends BaseActivity {
         listaFormulas.add(getString(R.string.irs));
         listaFormulas.add(getString(R.string.capacidade_vital));
         listaFormulas.add(getString(R.string.pesoPredito));
+        listaFormulas.add(getString(R.string.pco2_esperado));
 
         CalcAdapter calcAdapter = new CalcAdapter(this, listaFormulas);
 

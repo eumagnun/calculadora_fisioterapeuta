@@ -46,6 +46,7 @@ public class BaseActivity extends AppCompatActivity {
         switch (item.getItemId()) {
             case R.id.action_share:
                 if (!shareString.equals("")) {
+                    shareString += "\n\n https://play.google.com/store/apps/details?id=br.com.pegasuswe.calculadora_fisioterapeuta";
                     share(shareString);
                 }
                 return true;

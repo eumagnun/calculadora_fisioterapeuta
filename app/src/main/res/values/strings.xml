@@ -46,4 +46,7 @@
     <string name="build">Build 1.1 Data: 10/02/2018</string>
     <string name="capacidade_vital">Capacidade Vital</string>
     <string name="pesoPredito">Peso Predito</string>
+    <string name="pco2_esperado">PCO²Esperado</string>
+    <string name="bic_acidose_metab_lica">Bic Acidose Metabólica</string>
+    <string name="bic_alcalose_metab_lica">Bic Alcalose Metabólica</string>
 </resources>

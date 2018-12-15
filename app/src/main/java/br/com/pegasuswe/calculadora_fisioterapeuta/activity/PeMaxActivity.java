@@ -71,20 +71,26 @@ public class PeMaxActivity extends BaseActivity {
         } else {
 
             long age = etAge.getText().toString() == null || "".equals(etAge.getText().toString()) ? 0 : Long.parseLong(etAge.getText().toString());
-            if (scMasc.isChecked()) {
 
-                Double r = ((0.81 * age) + 165.3);
-                String result = String.valueOf(Math.round(r));
-                tvResult.setText(result);
-                shareString = getString(R.string.cdp) + " = " + String.valueOf(result);
+            if(age < 20 || age > 80) {
+                Toast.makeText(this, "A idade deve estar entre 20 e 80 anos", Toast.LENGTH_SHORT).show();
+            }else{
 
-            } else if (scFem.isChecked()) {
+                if (scMasc.isChecked()) {
 
-                Double r = ((0.61 * age) + 115.6);
-                String result = String.valueOf(Math.round(r));
-                tvResult.setText(result);
-                shareString = getString(R.string.pemax) + " = " + String.valueOf(result);
+                    Double r = (-1.26 * age + 183.31);
+                    String result = String.valueOf(Math.round(r));
+                    tvResult.setText(result);
+                    shareString = getString(R.string.cdp) + " = " + String.valueOf(result);
 
+                } else if (scFem.isChecked()) {
+
+                    Double r = (-0.68 * age + 119.35);
+                    String result = String.valueOf(Math.round(r));
+                    tvResult.setText(result);
+                    shareString = getString(R.string.pemax) + " = " + String.valueOf(result);
+
+                }
             }
         }
     }

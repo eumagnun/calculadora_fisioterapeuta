@@ -15,6 +15,7 @@ import br.com.pegasuswe.calculadora_fisioterapeuta.activity.ComplacenciaDinamica
 import br.com.pegasuswe.calculadora_fisioterapeuta.activity.ComplacenciaEstaticaActivity;
 import br.com.pegasuswe.calculadora_fisioterapeuta.R;
 import br.com.pegasuswe.calculadora_fisioterapeuta.activity.BaseActivity;
+import br.com.pegasuswe.calculadora_fisioterapeuta.activity.DrivePressureActivity;
 import br.com.pegasuswe.calculadora_fisioterapeuta.activity.Fio2DesejadaActivity;
 import br.com.pegasuswe.calculadora_fisioterapeuta.activity.FrequenciaRespiratoriaActivity;
 import br.com.pegasuswe.calculadora_fisioterapeuta.activity.GlasgowActivity;
@@ -136,6 +137,9 @@ public class CalcAdapter extends RecyclerView.Adapter {
 
             }else if(tvCalcName.getText().toString().equals(context.getString(R.string.pco2_esperado))){
                 ((BaseActivity) context).loadActivity(((BaseActivity) context), Pco2Esperado.class);
+
+            }else if(tvCalcName.getText().toString().equals(context.getString(R.string.drive_pressure))){
+                ((BaseActivity) context).loadActivity(((BaseActivity) context), DrivePressureActivity.class);
 
             }else{
                 Toast.makeText(context, "Em desenvolvimento", Toast.LENGTH_SHORT).show();

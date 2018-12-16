@@ -81,7 +81,7 @@ public class PeMaxActivity extends BaseActivity {
                     Double r = (-1.26 * age + 183.31);
                     String result = String.valueOf(Math.round(r));
                     tvResult.setText(result);
-                    shareString = getString(R.string.cdp) + " = " + String.valueOf(result);
+                    shareString = getString(R.string.pemax) + " = " + String.valueOf(result);
 
                 } else if (scFem.isChecked()) {
 

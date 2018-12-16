@@ -138,11 +138,28 @@
                 android:paddingBottom="10dp"
                 android:text="Informação: "
                 android:textStyle="bold"/>
-            <ImageView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@drawable/pressao_inspiratoria_maxima"/>
+                android:orientation="vertical">
 
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Fórmula Pimáx(cmH2O) - Versão 2010"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="HOMENS =  -1,24 × idade + 232,37"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="MULHERES = -0,46 × idade + 74,25"/>
+
+            </LinearLayout>
         </LinearLayout>
     </RelativeLayout>
 </ScrollView>

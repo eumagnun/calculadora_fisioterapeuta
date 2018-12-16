@@ -115,7 +115,7 @@ public class PesoPreDitoActivity extends BaseActivity {
 
     @OnClick(R.id.btSelectVolume)
     public void selectVolume(View view) {
-        final CharSequence[] items = {"6", "7", "8"};
+        final CharSequence[] items = {"4","5","6", "7", "8"};
 
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Selecione");

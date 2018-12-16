@@ -49,4 +49,5 @@
     <string name="pco2_esperado">PCO²Esperado</string>
     <string name="bic_acidose_metab_lica">Bic Acidose Metabólica</string>
     <string name="bic_alcalose_metab_lica">Bic Alcalose Metabólica</string>
+    <string name="drive_pressure">Drive Pressure</string>
 </resources>

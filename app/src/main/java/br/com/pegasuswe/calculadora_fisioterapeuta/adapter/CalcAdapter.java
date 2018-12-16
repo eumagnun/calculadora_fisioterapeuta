@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.Collections;
 import java.util.List;
 
 import br.com.pegasuswe.calculadora_fisioterapeuta.activity.CapacidadeVitalActivity;
@@ -39,6 +40,7 @@ public class CalcAdapter extends RecyclerView.Adapter {
 
     public CalcAdapter(Context context, List<String> list) {
         this.list = list;
+        Collections.sort(this.list);
         this.context = context;
     }
 

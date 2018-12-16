@@ -121,6 +121,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
+            <TextView
+                android:id="@+id/tvResult2"
+                android:textColor="@color/colorAccent"
+                android:padding="10dp"
+                android:gravity="center"
+                android:textSize="36sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
             <Button
                 android:id="@+id/btCalc"
                 android:layout_width="match_parent"
@@ -146,18 +154,35 @@
                <TextView
                    android:layout_width="match_parent"
                    android:layout_height="wrap_content"
+                   android:text="Fórmula Pemáx(cmH2O) - Versão Padrão"/>
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Homens = 165,4 – 0,81 x idade"/>
+
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:paddingBottom="20dp"
+                   android:text="Mulheres = 115,6 – 0,61 x idade"/>
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
                    android:text="Fórmula Pemáx(cmH2O) - Versão 2010"/>
 
                <TextView
                    android:layout_width="match_parent"
                    android:layout_height="wrap_content"
-                   android:text="HOMENS = -1,26 × idade + 183,31"/>
+                   android:text="Homens = -1,26 × idade + 183,31"/>
 
 
                <TextView
                    android:layout_width="match_parent"
                    android:layout_height="wrap_content"
-                   android:text="MULHERES = -0,68 × idade + 119,35"/>
+                   android:text="Mulheres = -0,68 × idade + 119,35"/>
 
            </LinearLayout>
 

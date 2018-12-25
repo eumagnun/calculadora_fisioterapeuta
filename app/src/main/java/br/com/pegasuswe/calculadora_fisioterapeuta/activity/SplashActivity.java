@@ -26,7 +26,11 @@ public class SplashActivity extends BaseActivity {
                     e.printStackTrace();
                 } finally {
 
-                    loadActivity(SplashActivity.this, MainActivity.class);
+                    if(isMensagemJaLida()){
+                        loadActivity(SplashActivity.this, MainActivity.class);
+                    }else {
+                        loadActivity(SplashActivity.this, AvaliacaoActivity.class);
+                    }
                 }
             }
         };

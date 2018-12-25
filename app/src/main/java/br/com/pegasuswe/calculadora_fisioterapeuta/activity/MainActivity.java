@@ -39,6 +39,7 @@ public class MainActivity extends BaseActivity {
         listaFormulas.add(getString(R.string.pesoPredito));
         listaFormulas.add(getString(R.string.pco2_esperado));
         listaFormulas.add(getString(R.string.drive_pressure));
+        listaFormulas.add(getString(R.string.iwi));
 
 
         CalcAdapter calcAdapter = new CalcAdapter(this, listaFormulas);

@@ -43,11 +43,14 @@
     <string name="sobre_o_app_tile">Sobre o App</string>
     <string name="observacao">Este aplicativo oferece cálculos voltados a área de fisioterápia porém não substitui o conhecimento de um profissional.  A qualquer momento um calculo pode vir a ser depreciado sem prévio aviso.  Em casos de divergências, ou quando estiver com alguma dúvida, a opinião de um profissional deverá prevalecer.\nFicarei grato se puder encaminhar suas sugestões </string>
     <string name="importante">Importante</string>
-    <string name="build">Build 1.1 Data: 10/02/2018</string>
+    <string name="build">Data versão: 25/12/2018 23:01</string>
     <string name="capacidade_vital">Capacidade Vital</string>
     <string name="pesoPredito">Peso Predito</string>
     <string name="pco2_esperado">PCO²Esperado</string>
     <string name="bic_acidose_metab_lica">Bic Acidose Metabólica</string>
     <string name="bic_alcalose_metab_lica">Bic Alcalose Metabólica</string>
     <string name="drive_pressure">Drive Pressure</string>
+    <string name="iwi">Índice IWI</string>
+    <string name="param_msg_ja_lida">param_msg_ja_lida</string>
+    <string name="preference_file_key">br.com.fisiocalc.preferences</string>
 </resources>

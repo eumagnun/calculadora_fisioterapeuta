@@ -1,7 +1,9 @@
 package br.com.pegasuswe.calculadora_fisioterapeuta.activity;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -66,5 +68,27 @@ public class BaseActivity extends AppCompatActivity {
         sendIntent.putExtra(Intent.EXTRA_TEXT, text);
         sendIntent.setType("text/plain");
         startActivity(sendIntent);
+    }
+
+
+    protected boolean isMensagemJaLida(){
+
+        Context context = this;
+        SharedPreferences sharedPref = context.getSharedPreferences(
+                getString(R.string.preference_file_key), Context.MODE_PRIVATE);
+
+        int isMensagemJaLida = sharedPref.getInt(getString(R.string.param_msg_ja_lida), 0);
+        return isMensagemJaLida >0;
+    }
+
+    protected void marcarMensagemComoLida(){
+        Context context = this;
+        SharedPreferences sharedPref = context.getSharedPreferences(
+                getString(R.string.preference_file_key), Context.MODE_PRIVATE);
+
+        SharedPreferences.Editor editor = sharedPref.edit();
+        editor.putInt(getString(R.string.param_msg_ja_lida), 1);
+
+        editor.commit();
     }
 }

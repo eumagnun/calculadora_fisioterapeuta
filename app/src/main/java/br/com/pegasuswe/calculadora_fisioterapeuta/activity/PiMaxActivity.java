@@ -8,12 +8,15 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.MobileAds;
+
 import br.com.pegasuswe.calculadora_fisioterapeuta.R;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class PiMaxActivity extends BaseActivity {
+public class PiMaxActivity extends BaseCalculoActivity {
 
 
     @BindView(R.id.scFem)
@@ -42,6 +45,8 @@ public class PiMaxActivity extends BaseActivity {
 
         ButterKnife.bind(this);
         scMasc.setChecked(true);
+
+        initADMob();
     }
 
 
@@ -68,7 +73,7 @@ public class PiMaxActivity extends BaseActivity {
 
         if (etAge.getText().toString().equals("")) {
 
-            Toast.makeText(this, "Todos os campos são obrigatórios!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, R.string.campos_obrigatorios, Toast.LENGTH_SHORT).show();
         } else {
 
 
@@ -77,6 +82,9 @@ public class PiMaxActivity extends BaseActivity {
             if (age < 20 || age > 80) {
                 Toast.makeText(this, "A idade deve estar entre 20 e 80 anos", Toast.LENGTH_SHORT).show();
             } else {
+
+                String nomeCalculo = getString(R.string.pimax);
+
                 if (scMasc.isChecked()) {
 
                     Double r = -0.80 * age + 155.3;
@@ -89,8 +97,12 @@ public class PiMaxActivity extends BaseActivity {
                     String result2 = String.valueOf(Math.round(r2));
                     tvResult2.setText("Cálc 2010="+result2);
 
-                    shareString = getString(R.string.pimax) + "-Cálculo Padrão = " + String.valueOf(result);
-                    shareString += "\n"+getString(R.string.pimax) + "-Cálculo 2010 = " + String.valueOf(result2);
+                    registrarCalculo(tvResult.getText().toString()+"\n"+tvResult2.getText().toString(),nomeCalculo);
+
+                    shareString = nomeCalculo+ "-Cálculo Padrão = " + String.valueOf(result);
+                    shareString += "\n"+nomeCalculo+ "-Cálculo 2010 = " + String.valueOf(result2);
+
+
 
                 } else if (scFem.isChecked()) {
 
@@ -102,10 +114,22 @@ public class PiMaxActivity extends BaseActivity {
                     String result2 = String.valueOf(Math.round(r2));
                     tvResult2.setText("Cálc 2010="+result2);
 
-                    shareString = getString(R.string.pimax) + "-Cálculo Padrão = " + String.valueOf(result);
-                    shareString += "\n"+getString(R.string.pimax) + "-Cálculo 2010 = " + String.valueOf(result2);
+                    registrarCalculo(tvResult.getText().toString()+"\n"+tvResult2.getText().toString(),nomeCalculo);
+
+                    shareString = nomeCalculo + "-Cálculo Padrão = " + String.valueOf(result);
+                    shareString += "\n"+nomeCalculo+ "-Cálculo 2010 = " + String.valueOf(result2);
                 }
             }
         }
+    }
+
+
+    private void initADMob(){
+        MobileAds.initialize(this, "ca-app-pub-5007246500618998/5880660069");
+        mAdView = findViewById(R.id.adView);
+
+        AdRequest adRequest = new AdRequest.Builder().addTestDevice("889E178D15F2793ACAF1D4F866C416D9").build();
+
+        mAdView.loadAd(adRequest);
     }
 }

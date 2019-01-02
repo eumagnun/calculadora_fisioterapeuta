@@ -9,13 +9,16 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.MobileAds;
+
 import br.com.pegasuswe.calculadora_fisioterapeuta.R;
 import br.com.pegasuswe.calculadora_fisioterapeuta.activity.BaseActivity;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class PeMaxActivity extends BaseActivity {
+public class PeMaxActivity extends BaseCalculoActivity {
 
 
     @BindView(R.id.scFem)
@@ -45,6 +48,8 @@ public class PeMaxActivity extends BaseActivity {
 
         ButterKnife.bind(this);
         scMasc.setChecked(true);
+
+        initADMob();
     }
 
 
@@ -71,7 +76,7 @@ public class PeMaxActivity extends BaseActivity {
 
         if (etAge.getText().toString().equals("")) {
 
-            Toast.makeText(this, "Todos os campos são obrigatórios!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, R.string.campos_obrigatorios, Toast.LENGTH_SHORT).show();
         } else {
 
             long age = etAge.getText().toString() == null || "".equals(etAge.getText().toString()) ? 0 : Long.parseLong(etAge.getText().toString());
@@ -80,6 +85,8 @@ public class PeMaxActivity extends BaseActivity {
                 Toast.makeText(this, "A idade deve estar entre 20 e 80 anos", Toast.LENGTH_SHORT).show();
             }else{
 
+                String nomeCalculo = getString(R.string.pemax);
+
                 if (scMasc.isChecked()) {
 
                     Double r = (165.4-0.81 * age);
@@ -87,10 +94,13 @@ public class PeMaxActivity extends BaseActivity {
                     tvResult.setText("Cálc Padrão="+result);
 
 
-
                     Double r2 = (-1.26 * age + 183.31);
                     String result2 = String.valueOf(Math.round(r2));
                     tvResult2.setText("Cálc 2010="+result2);
+
+
+                    registrarCalculo(tvResult.getText().toString()+"\n"+tvResult2.getText().toString(), nomeCalculo);
+
                     shareString = getString(R.string.pemax) + "-Cálculo Padrão = " + String.valueOf(result);
                     shareString += "\n"+getString(R.string.pemax) + "-Cálculo 2010 = " + String.valueOf(result2);
 
@@ -100,15 +110,26 @@ public class PeMaxActivity extends BaseActivity {
                     String result = String.valueOf(Math.round(r));
                     tvResult.setText("Cálc Padrão="+result);
 
-
-
                     Double r2 = (-0.68 * age + 119.35);
                     String result2 = String.valueOf(Math.round(r2));
                     tvResult2.setText("Cálc 2010="+result2);
+
+                    registrarCalculo(tvResult.getText().toString()+"\n"+tvResult2.getText().toString(), nomeCalculo);
+
                     shareString = getString(R.string.pemax) + "-Cálculo Padrão = " + String.valueOf(result);
                     shareString += "\n"+getString(R.string.pemax) + "-Cálculo 2010 = " + String.valueOf(result2);
                 }
             }
         }
+    }
+
+
+    private void initADMob(){
+        MobileAds.initialize(this, "ca-app-pub-5007246500618998/5880660069");
+        mAdView = findViewById(R.id.adView);
+
+        AdRequest adRequest = new AdRequest.Builder().addTestDevice("889E178D15F2793ACAF1D4F866C416D9").build();
+
+        mAdView.loadAd(adRequest);
     }
 }

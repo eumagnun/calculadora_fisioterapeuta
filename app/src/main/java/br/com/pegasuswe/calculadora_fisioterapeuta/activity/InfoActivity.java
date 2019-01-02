@@ -8,6 +8,9 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.ImageView;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.MobileAds;
+
 import br.com.pegasuswe.calculadora_fisioterapeuta.R;
 import br.com.pegasuswe.calculadora_fisioterapeuta.activity.BaseActivity;
 import butterknife.BindView;
@@ -35,7 +38,11 @@ public class InfoActivity extends BaseActivity {
                 startActivity(intent);
             }
         });
+
+        //initADMob();
     }
+
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -43,5 +50,13 @@ public class InfoActivity extends BaseActivity {
         return true;
     }
 
+    private void initADMob(){
+        MobileAds.initialize(this, "ca-app-pub-5007246500618998/5880660069");
+        mAdView = findViewById(R.id.adView);
+
+        AdRequest adRequest = new AdRequest.Builder().addTestDevice("889E178D15F2793ACAF1D4F866C416D9").build();
+
+        mAdView.loadAd(adRequest);
+    }
 
 }

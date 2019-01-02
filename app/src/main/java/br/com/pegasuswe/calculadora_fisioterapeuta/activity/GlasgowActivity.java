@@ -10,12 +10,15 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.MobileAds;
+
 import br.com.pegasuswe.calculadora_fisioterapeuta.R;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class GlasgowActivity extends BaseActivity {
+public class GlasgowActivity extends BaseCalculoActivity {
 
     @BindView(R.id.etAberturaOcular)
     EditText etAberturaOcular;
@@ -50,6 +53,8 @@ public class GlasgowActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_glasgow);
         ButterKnife.bind(this);
+
+        initADMob();
     }
 
     @OnClick(R.id.btSelectetAberturaOcular)
@@ -160,14 +165,25 @@ public class GlasgowActivity extends BaseActivity {
                 etRespostaMotora.getText().toString().equals("") ||
                 etAberturaOcular.getText().toString().equals("")) {
 
-            Toast.makeText(this, "Todos os campos são obrigatórios!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, R.string.campos_obrigatorios, Toast.LENGTH_SHORT).show();
         } else {
+
+            String nomeCalculo = getString(R.string.glasgow);
             int result = aberturaOcularScore + respostaMotoraScore + respostaVerbalScore;
             tvResult.setText(String.valueOf(result));
 
             shareString = getString(R.string.glasgow)+" = "+String.valueOf(result);
+
+            registrarCalculo(String.valueOf(result), nomeCalculo);
         }
     }
 
+    private void initADMob(){
+        MobileAds.initialize(this, "ca-app-pub-5007246500618998/5880660069");
+        mAdView = findViewById(R.id.adView);
 
+        AdRequest adRequest = new AdRequest.Builder().addTestDevice("889E178D15F2793ACAF1D4F866C416D9").build();
+
+        mAdView.loadAd(adRequest);
+    }
 }

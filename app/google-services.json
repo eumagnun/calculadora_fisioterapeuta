@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "796995168072",
+    "firebase_url": "https://calculadora-fisioterapeu-9dc2c.firebaseio.com",
+    "project_id": "calculadora-fisioterapeu-9dc2c",
+    "storage_bucket": "calculadora-fisioterapeu-9dc2c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:796995168072:android:1431cb165f995b0c",
+        "android_client_info": {
+          "package_name": "br.com.pegasuswe.calculadora_fisioterapeuta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "796995168072-dis94scgabpd57ubcdiijl4sl821rofk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.pegasuswe.calculadora_fisioterapeuta",
+            "certificate_hash": "87a8551d1a6a7a93d370414c2584fff48227b33a"
+          }
+        },
+        {
+          "client_id": "796995168072-4sqvb1nor8llfmr6cgp2gtpdkgfv41ao.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7TY1he8ThiDDv-Hgk3f_vAh1rFylLE58"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "796995168072-4sqvb1nor8llfmr6cgp2gtpdkgfv41ao.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      },
+      "admob_app_id": "ca-app-pub-5007246500618998~5043858914"
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -7,12 +7,15 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.MobileAds;
+
 import br.com.pegasuswe.calculadora_fisioterapeuta.R;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class IndiceTobinActivity extends BaseActivity {
+public class IndiceTobinActivity extends BaseCalculoActivity {
 
     @BindView(R.id.etFrequenciaRespiratoria)
     EditText etFrequenciaRespiratoria;
@@ -31,6 +34,8 @@ public class IndiceTobinActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_indice_tobin);
         ButterKnife.bind(this);
+
+        initADMob();
     }
 
     @OnClick(R.id.btCalc)
@@ -38,16 +43,30 @@ public class IndiceTobinActivity extends BaseActivity {
         if (etFrequenciaRespiratoria.getText().toString().equals("") ||
                 etVolumeCorrenteL.getText().toString().equals("")) {
 
-            Toast.makeText(this, "Todos os campos são obrigatórios!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, R.string.campos_obrigatorios, Toast.LENGTH_SHORT).show();
         } else {
+
+            String nomeCalculo = getString(R.string.irs);
+
             double frequenciaRespiratoria = Double.parseDouble(etFrequenciaRespiratoria.getText().toString());
             double volumeCorrenteL = Double.parseDouble(etVolumeCorrenteL.getText().toString());
 
             double result = (frequenciaRespiratoria / volumeCorrenteL);
             tvResult.setText(String.valueOf(result));
 
-            shareString = getString(R.string.irs)+" = "+String.valueOf(result);
+            shareString = nomeCalculo+" = "+String.valueOf(result);
+
+            registrarCalculo(String.valueOf(result), nomeCalculo);
         }
 
+    }
+
+    private void initADMob(){
+        MobileAds.initialize(this, "ca-app-pub-5007246500618998/5880660069");
+        mAdView = findViewById(R.id.adView);
+
+        AdRequest adRequest = new AdRequest.Builder().addTestDevice("889E178D15F2793ACAF1D4F866C416D9").build();
+
+        mAdView.loadAd(adRequest);
     }
 }

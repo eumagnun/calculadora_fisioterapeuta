@@ -9,12 +9,15 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.MobileAds;
+
 import br.com.pegasuswe.calculadora_fisioterapeuta.R;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class ComplacenciaEstaticaActivity extends BaseActivity {
+public class ComplacenciaEstaticaActivity extends BaseCalculoActivity {
 
     @BindView(R.id.etVolumeCorrent)
     EditText etVolumeCorrent;
@@ -36,10 +39,14 @@ public class ComplacenciaEstaticaActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_complacencia_estatica);
         ButterKnife.bind(this);
+
+        initADMob();
     }
 
     @OnClick(R.id.btCalc)
     public void calc(View view) {
+
+        String nomeCalculo = getString(R.string.cep);
         if (etPlato.getText().toString().equals("") ||
                 etPEEP.getText().toString().equals("") ||
                 etVolumeCorrent.getText().toString().equals("")) {
@@ -53,8 +60,21 @@ public class ComplacenciaEstaticaActivity extends BaseActivity {
             double result = volumeCorrente / (plato - PEEP);
             tvResult.setText(String.valueOf(result));
 
-            shareString = getString(R.string.cep)+" = "+String.valueOf(result);
+            shareString = nomeCalculo+" = "+String.valueOf(result);
+
+            registrarCalculo(String.valueOf(result), nomeCalculo);
         }
 
+
+
+    }
+
+    private void initADMob(){
+        MobileAds.initialize(this, "ca-app-pub-5007246500618998/5880660069");
+        mAdView = findViewById(R.id.adView);
+
+        AdRequest adRequest = new AdRequest.Builder().addTestDevice("889E178D15F2793ACAF1D4F866C416D9").build();
+
+        mAdView.loadAd(adRequest);
     }
 }

@@ -30,7 +30,6 @@
     <string name="p_plat">P. platô</string>
     <string name="peep">PEEP</string>
     <string name="p_pico">P. pico</string>
-    <string name="campos_obrigatorios">Todos os campos são obrigatórios!</string>
     <string name="fluxo">Fluxo</string>
     <string name="pao2">PaO2</string>
     <string name="fio2">FiO2</string>
@@ -53,4 +52,14 @@
     <string name="iwi">Índice IWI</string>
     <string name="param_msg_ja_lida">param_msg_ja_lida</string>
     <string name="preference_file_key">br.com.fisiocalc.preferences</string>
+    <string name="sair">Sair</string>
+    <string name="entrar">Entrar</string>
+    <string name="login">Login</string>
+    <string name="codigo_admob">ca-app-pub-5007246500618998/5880660069</string>
+    <string name="codigo_dispositivo_teste_admob">889E178D15F2793ACAF1D4F866C416D9</string>
+    <string name="token_login_google">796995168072-4sqvb1nor8llfmr6cgp2gtpdkgfv41ao.apps.googleusercontent.com</string>
+    <string name="campos_obrigatorios">Todos os campos são obrigatórios!</string>
+    <string name="valor_calculo">Valor calculo:</string>
+    <string name="data_calculo">Data calculo:</string>
+
 </resources>

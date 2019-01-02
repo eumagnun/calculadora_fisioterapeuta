@@ -7,12 +7,15 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.MobileAds;
+
 import br.com.pegasuswe.calculadora_fisioterapeuta.R;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class IndiceOxigenacaoActivity extends BaseActivity {
+public class IndiceOxigenacaoActivity extends BaseCalculoActivity {
 
     @BindView(R.id.etPao2)
     EditText etPao2;
@@ -31,6 +34,8 @@ public class IndiceOxigenacaoActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_indice_oxigenacao);
         ButterKnife.bind(this);
+
+        initADMob();
     }
 
     @OnClick(R.id.btCalc)
@@ -38,16 +43,31 @@ public class IndiceOxigenacaoActivity extends BaseActivity {
         if (etFio2.getText().toString().equals("") ||
                 etPao2.getText().toString().equals("")) {
 
-            Toast.makeText(this, "Todos os campos são obrigatórios!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, R.string.campos_obrigatorios, Toast.LENGTH_SHORT).show();
         } else {
+
+            String nomeCalculo = getString(R.string.io);
+
             double fio2 = Double.parseDouble(etFio2.getText().toString());
             double pao2 = Double.parseDouble(etPao2.getText().toString());
 
             double result =(pao2/fio2);
             tvResult.setText(String.valueOf(result));
 
-            shareString = getString(R.string.io)+" = "+String.valueOf(result);
+            shareString = nomeCalculo+" = "+String.valueOf(result);
+
+            registrarCalculo(String.valueOf(result), nomeCalculo);
         }
 
+    }
+
+
+    private void initADMob(){
+        MobileAds.initialize(this, "ca-app-pub-5007246500618998/5880660069");
+        mAdView = findViewById(R.id.adView);
+
+        AdRequest adRequest = new AdRequest.Builder().addTestDevice("889E178D15F2793ACAF1D4F866C416D9").build();
+
+        mAdView.loadAd(adRequest);
     }
 }

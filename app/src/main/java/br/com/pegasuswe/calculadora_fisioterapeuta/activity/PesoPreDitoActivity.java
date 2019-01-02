@@ -10,6 +10,9 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.MobileAds;
+
 import java.text.DecimalFormat;
 
 import br.com.pegasuswe.calculadora_fisioterapeuta.R;
@@ -17,7 +20,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class PesoPreDitoActivity extends BaseActivity {
+public class PesoPreDitoActivity extends BaseCalculoActivity {
 
 
     @BindView(R.id.scFem)
@@ -52,6 +55,8 @@ public class PesoPreDitoActivity extends BaseActivity {
 
         ButterKnife.bind(this);
         scMasc.setChecked(true);
+
+        initADMob();
     }
 
 
@@ -78,9 +83,10 @@ public class PesoPreDitoActivity extends BaseActivity {
 
         if (etAltura.getText().toString().equals("") || etVolume.getText().toString().equals("")) {
 
-            Toast.makeText(this, "Todos os campos são obrigatórios!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, R.string.campos_obrigatorios, Toast.LENGTH_SHORT).show();
         } else {
 
+            String nomeCalculo = getString(R.string.pesoPredito);
 
             long altura = etAltura.getText().toString() == null || "".equals(etAltura.getText().toString()) ? 0 : Long.parseLong(etAltura.getText().toString());
             double volume= etVolume.getText().toString() == null || "".equals(etVolume.getText().toString()) ? 0 : Double.parseDouble(etVolume.getText().toString());
@@ -96,7 +102,9 @@ public class PesoPreDitoActivity extends BaseActivity {
                 String resultVolume =f.format(r*volume);
                 tvResultVolume.setText(f.format(r*volume));
 
-                shareString = getString(R.string.pesoPredito)+ " - Peso Homem = " + resultPeso+ "\n Volume Homem = "+resultVolume;
+                shareString = nomeCalculo+ " - Peso Homem = " + resultPeso+ "\n Volume Homem = "+resultVolume;
+
+                registrarCalculo("Peso Homem = " + resultPeso+ "\n Volume Homem = "+resultVolume, nomeCalculo);
 
             } else if (scFem.isChecked()) {
 
@@ -108,7 +116,9 @@ public class PesoPreDitoActivity extends BaseActivity {
                 String resultVolume =f.format(r*volume);
                 tvResultVolume.setText(f.format(r*volume));
 
-                shareString = getString(R.string.pesoPredito)+ " - Peso Mulher = " + resultPeso+ "\n Volume Mulher = "+resultVolume;
+                shareString = nomeCalculo+ " - Peso Mulher = " + resultPeso+ "\n Volume Mulher = "+resultVolume;
+
+                registrarCalculo("Peso Mulher = " + resultPeso+ "\n Volume Mulher = "+resultVolume, nomeCalculo);
             }
         }
     }
@@ -127,6 +137,17 @@ public class PesoPreDitoActivity extends BaseActivity {
         });
         AlertDialog alert = builder.create();
         alert.show();
+    }
+
+
+
+    private void initADMob(){
+        MobileAds.initialize(this, "ca-app-pub-5007246500618998/5880660069");
+        mAdView = findViewById(R.id.adView);
+
+        AdRequest adRequest = new AdRequest.Builder().addTestDevice("889E178D15F2793ACAF1D4F866C416D9").build();
+
+        mAdView.loadAd(adRequest);
     }
 
 }

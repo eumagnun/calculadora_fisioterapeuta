@@ -61,5 +61,41 @@
     <string name="campos_obrigatorios">Todos os campos são obrigatórios!</string>
     <string name="valor_calculo">Valor calculo:</string>
     <string name="data_calculo">Data calculo:</string>
+    <string name="historico">Histórico de Cálculos</string>
+    <string name="msg_carregando">Carregando...</string>
+    <string name="msg_calculo_nao_efetuado">Cálculo não efetuado!</string>
+    <string name="msg_calculo_A">Cálculo A =</string>
+    <string name="msg_calculo_b">Cálculo B =</string>
+    <string name="msg_glasgow_abertura_ocular_espontanea">Espontânea</string>
+    <string name="msg_glasgow_abertura_ocular_voz">À voz</string>
+    <string name="msg_glasgow_abertura_ocular_dor">À dor</string>
+    <string name="msg_glasgow_abertura_ocular_nenhuma">Nenhuma</string>
+    <string name="msg_selecione">Selecione</string>
+    <string name="msg_glasgow_resp_verbal_orientada">Orientada</string>
+    <string name="msg_glasgow_resp_verbal_confusa">Confusa</string>
+    <string name="msg_glasgow_resp_verbal_palavras_inapropriadas">Palavras Inapropriadas</string>
+    <string name="msg_glasgow_resp_verbal_palavras_incompreensivas">Palavras Incompreensivas</string>
+    <string name="msg_glasgow_resp_verbal_nenhuma">Nenhuma</string>
+    <string name="msg_acidose_metabolica">Acidose Metalólica =</string>
+    <string name="msg_alcalose_metabolica">Alcalose Metabólica =</string>
+    <string name="msg_intervalo_idade">A idade deve estar entre 20 e 80 anos</string>
+    <string name="msg_calculo_padrao">-Cálculo Padrão =</string>
+    <string name="msg_calculo_2010">-Cálculo 2010 =</string>
+    <string name="msg_peso_homem">Peso Homem =</string>
+    <string name="msg_volume_homem">Volume Homem =</string>
+    <string name="msg_peso_mulher">Peso Mulher =</string>
+    <string name="msg_volume_mulher">Volume Mulher =</string>
+    <string name="msg_avalie_critique">Olá!  Sabia que vários cálculos foram implementados com base em sugestões de usuários?  Se tiver criticas ou sugestões elas serão muito bem vindas também!  É só enviar uma mensagem para eumagnun@gmail.com   Se achar que estamos indo no caminho certo e quiser nos avaliar é só clicar nas estrelas abaixo.</string>
+    <string name="msg_muito_obrigado">Muito Obrigado!</string>
+    <string name="avaliar_depois">Avaliar depois</string>
+    <string name="n_o_ver_mais">Não ver mais</string>
+    <string name="homem">Homem</string>
+    <string name="mulher">Mulher</string>
+    <string name="idade">Idade</string>
+    <string name="altura_cm">Altura (cm)</string>
+    <string name="calcular">Calcular</string>
+    <string name="informa_o">Informação:</string>
+    <string name="formula_capacidade_vital_homem">Homens:CV = 0,05211 - 0,022 x idade -3,60 x altura (cm)</string>
+    <string name="formula_capacidade_vital_mulher">Mulheres:CV = 0,4111 - 0,018 x idade - 2,69 x altura (cm)</string>
 
 </resources>

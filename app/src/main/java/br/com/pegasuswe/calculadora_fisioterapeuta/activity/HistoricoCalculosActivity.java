@@ -57,6 +57,8 @@ public class HistoricoCalculosActivity extends BaseActivity implements BusinessL
         }
 
         logadoOuNaoLogado();
+
+        setTitle(R.string.historico);
     }
 
 

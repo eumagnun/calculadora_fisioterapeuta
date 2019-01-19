@@ -102,9 +102,9 @@ public class PesoPreDitoActivity extends BaseCalculoActivity {
                 String resultVolume =f.format(r*volume);
                 tvResultVolume.setText(f.format(r*volume));
 
-                shareString = nomeCalculo+ " - Peso Homem = " + resultPeso+ "\n Volume Homem = "+resultVolume;
+                shareString = nomeCalculo+ " - "+getString(R.string.msg_peso_homem)  + resultPeso+ getString(R.string.msg_volume_homem)+resultVolume;
 
-                registrarCalculo("Peso Homem = " + resultPeso+ "\n Volume Homem = "+resultVolume, nomeCalculo);
+                registrarCalculo(getString(R.string.msg_peso_homem) + resultPeso+  getString(R.string.msg_volume_homem)+ resultVolume, nomeCalculo);
 
             } else if (scFem.isChecked()) {
 
@@ -116,9 +116,9 @@ public class PesoPreDitoActivity extends BaseCalculoActivity {
                 String resultVolume =f.format(r*volume);
                 tvResultVolume.setText(f.format(r*volume));
 
-                shareString = nomeCalculo+ " - Peso Mulher = " + resultPeso+ "\n Volume Mulher = "+resultVolume;
+                shareString = nomeCalculo+ " - "+getString(R.string.msg_peso_mulher)  + resultPeso+ getString(R.string.msg_volume_mulher)+resultVolume;
 
-                registrarCalculo("Peso Mulher = " + resultPeso+ "\n Volume Mulher = "+resultVolume, nomeCalculo);
+                registrarCalculo(getString(R.string.msg_peso_mulher) + resultPeso+  getString(R.string.msg_volume_mulher) +resultVolume, nomeCalculo);
             }
         }
     }

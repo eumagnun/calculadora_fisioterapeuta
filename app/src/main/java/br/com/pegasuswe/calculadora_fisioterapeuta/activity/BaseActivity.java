@@ -116,7 +116,7 @@ public class BaseActivity extends AppCompatActivity {
     public void showProgressDialog() {
         if (mProgressDialog == null) {
             mProgressDialog = new ProgressDialog(this);
-            mProgressDialog.setMessage("Carregando...");
+            mProgressDialog.setMessage(getString(R.string.msg_carregando));
             mProgressDialog.setIndeterminate(true);
         }
 

@@ -52,7 +52,7 @@ public class BaseCalculoActivity extends BaseActivity {
             GravarCalculoDialog dialog = new GravarCalculoDialog(this, calculo);
             dialog.showDialog();
         } else {
-            Toast.makeText(this, "Cálculo não efetuado!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getString(R.string.msg_calculo_nao_efetuado), Toast.LENGTH_SHORT).show();
         }
     }
 }

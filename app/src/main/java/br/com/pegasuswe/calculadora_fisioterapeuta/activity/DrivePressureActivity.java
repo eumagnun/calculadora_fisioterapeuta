@@ -64,18 +64,18 @@ public class DrivePressureActivity extends BaseCalculoActivity {
             double peep = Double.parseDouble(etPeep.getText().toString());
 
             double result = (volumeCorrente / complacenciaEstatica);
-            String resultStr = " Cálculo A = " + String.valueOf(result);
+            String resultStr = getString(R.string.msg_calculo_A) + String.valueOf(result);
             tvResult.setText(resultStr);
 
 
             double result2 = (pressaoPlato - peep);
-            String resultStr2 = " Cálculo B = " + String.valueOf(result2);
+            String resultStr2 = getString(R.string.msg_calculo_b) + String.valueOf(result2);
             tvResult2.setText(resultStr2);
 
             registrarCalculo(resultStr + "\n" + resultStr2, nomeCalculo);
 
-            shareString = getString(R.string.drive_pressure) + " Cálculo A = " + String.valueOf(result);
-            shareString += "\n" + nomeCalculo + " Cálculo B = " + String.valueOf(result2);
+            shareString = getString(R.string.drive_pressure) + getString(R.string.msg_calculo_A) + String.valueOf(result);
+            shareString += "\n" + nomeCalculo + getString(R.string.msg_calculo_b) + String.valueOf(result2);
         }
 
     }

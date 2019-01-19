@@ -1,7 +1,6 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
-    xmlns:android="http://schemas.android.com/apk/res/android" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -48,7 +47,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
                         android:gravity="center_horizontal"
-                        android:text="Homem"
+                        android:text="@string/homem"
                         android:textSize="16sp" />
 
                     <android.support.v7.widget.SwitchCompat
@@ -74,7 +73,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
                         android:gravity="center_horizontal"
-                        android:text="Mulher"
+                        android:text="@string/mulher"
                         android:textSize="16sp" />
 
                     <android.support.v7.widget.SwitchCompat
@@ -107,7 +106,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:layout_below="@+id/txtViewHeader"
-                        android:hint="Idade"
+                        android:hint="@string/idade"
                         android:inputType="number"
                         android:maxLines="1"
                         android:paddingLeft="20dp" />
@@ -125,7 +124,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:layout_below="@+id/txtViewHeader"
-                        android:hint="Altura (cm)"
+                        android:hint="@string/altura_cm"
                         android:inputType="number"
                         android:maxLines="1"
                         android:paddingLeft="20dp" />
@@ -153,7 +152,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:background="@color/colorPrimary"
-                        android:text="Calcular"
+                        android:text="@string/calcular"
                         android:textAllCaps="false"
                         android:textColor="#FFF"
                         android:textSize="22dp" />
@@ -174,13 +173,32 @@
                     android:layout_height="wrap_content"
                     android:paddingTop="10dp"
                     android:paddingBottom="10dp"
-                    android:text="Informação: "
+                    android:text="@string/informa_o"
                     android:textStyle="bold" />
 
-                <ImageView
+
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/calculo_capacidade_vital" />
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text= "@string/capacidade_vital"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/formula_capacidade_vital_homem" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/formula_capacidade_vital_mulher" />
+
+                </LinearLayout>
 
             </LinearLayout>
 

@@ -16,7 +16,7 @@
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
             android:paddingTop="@dimen/default_side_margin"
-            android:text="Olá!\n\nSabia que vários cálculos foram implementados com base em sugestões de usuários?\n\nSe tiver criticas ou sugestões elas serão muito bem vindas também!\n\nÉ só enviar uma mensagem para eumagnun@gmail.com\n\n Se achar que estamos indo no caminho certo e quiser nos avaliar é só clicar nas estrelas abaixo."
+            android:text="@string/msg_avalie_critique"
             android:textColor="@color/colorPrimary"
             android:textSize="22sp"
             android:textStyle="bold" />
@@ -35,7 +35,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
-            android:text="Muito Obrigado!\n"
+            android:text="@string/msg_muito_obrigado"
             android:textColor="@color/colorPrimary"
             android:textSize="22sp"
             android:textStyle="bold" />
@@ -52,7 +52,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="#50ae5c"
-                android:text="Avaliar depois"
+                android:text="@string/avaliar_depois"
                 android:textColor="#FFF" />
 
 
@@ -63,7 +63,7 @@
                 android:layout_marginStart="10dp"
                 android:layout_weight="1"
                 android:background="#b66a55"
-                android:text="Não ver mais"
+                android:text="@string/n_o_ver_mais"
                 android:textColor="#FFF" />
 
         </LinearLayout>

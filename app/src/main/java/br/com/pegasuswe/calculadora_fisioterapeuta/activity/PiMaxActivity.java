@@ -80,7 +80,7 @@ public class PiMaxActivity extends BaseCalculoActivity {
             long age = etAge.getText().toString() == null || "".equals(etAge.getText().toString()) ? 0 : Long.parseLong(etAge.getText().toString());
 
             if (age < 20 || age > 80) {
-                Toast.makeText(this, "A idade deve estar entre 20 e 80 anos", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, getString(R.string.msg_intervalo_idade), Toast.LENGTH_SHORT).show();
             } else {
 
                 String nomeCalculo = getString(R.string.pimax);
@@ -89,18 +89,18 @@ public class PiMaxActivity extends BaseCalculoActivity {
 
                     Double r = -0.80 * age + 155.3;
                     String result = String.valueOf(Math.round(r));
-                    tvResult.setText("Cálc Padrão="+result);
+                    tvResult.setText(getString(R.string.msg_calculo_padrao)+result);
 
 
 
                     Double r2 = (-1.24 * age) + 232.37;
                     String result2 = String.valueOf(Math.round(r2));
-                    tvResult2.setText("Cálc 2010="+result2);
+                    tvResult2.setText(getString(R.string.msg_calculo_2010) +result2);
 
                     registrarCalculo(tvResult.getText().toString()+"\n"+tvResult2.getText().toString(),nomeCalculo);
 
-                    shareString = nomeCalculo+ "-Cálculo Padrão = " + String.valueOf(result);
-                    shareString += "\n"+nomeCalculo+ "-Cálculo 2010 = " + String.valueOf(result2);
+                    shareString = nomeCalculo+ "-"+getString(R.string.msg_calculo_padrao) + String.valueOf(result);
+                    shareString += "\n"+nomeCalculo+ getString(R.string.msg_calculo_2010) + String.valueOf(result2);
 
 
 
@@ -108,16 +108,16 @@ public class PiMaxActivity extends BaseCalculoActivity {
 
                     Double r =  -0.49 * age + 110.4;
                     String result = String.valueOf(Math.round(r));
-                    tvResult.setText("Cálc Padrão="+result);
+                    tvResult.setText(getString(R.string.msg_calculo_padrao)+result);
 
                     Double r2 = (-0.46 * age) + 74.25;
                     String result2 = String.valueOf(Math.round(r2));
-                    tvResult2.setText("Cálc 2010="+result2);
+                    tvResult2.setText(getString(R.string.msg_calculo_2010) +result2);
 
                     registrarCalculo(tvResult.getText().toString()+"\n"+tvResult2.getText().toString(),nomeCalculo);
 
-                    shareString = nomeCalculo + "-Cálculo Padrão = " + String.valueOf(result);
-                    shareString += "\n"+nomeCalculo+ "-Cálculo 2010 = " + String.valueOf(result2);
+                    shareString = nomeCalculo + "-"+getString(R.string.msg_calculo_padrao) + String.valueOf(result);
+                    shareString += "\n"+nomeCalculo+ "-"+getString(R.string.msg_calculo_2010)  + String.valueOf(result2);
                 }
             }
         }

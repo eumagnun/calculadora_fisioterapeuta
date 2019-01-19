@@ -59,10 +59,10 @@ public class GlasgowActivity extends BaseCalculoActivity {
 
     @OnClick(R.id.btSelectetAberturaOcular)
     public void selectetAberturaOcular(View view) {
-        final CharSequence[] items = {"Espontânea", "À voz", "À dor", "Nenhuma"};
+        final CharSequence[] items = {getString(R.string.msg_glasgow_abertura_ocular_espontanea), getString(R.string.msg_glasgow_abertura_ocular_voz), getString(R.string.msg_glasgow_abertura_ocular_dor), getString(R.string.msg_glasgow_abertura_ocular_nenhuma)};
 
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("Selecione");
+        builder.setTitle(R.string.msg_selecione);
         builder.setItems(items, new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int item) {
                 etAberturaOcular.setText(items[item]);
@@ -90,10 +90,10 @@ public class GlasgowActivity extends BaseCalculoActivity {
 
     @OnClick(R.id.btSelectetRespostaVerbal)
     public void selectetRespostaVerbal(View view) {
-        final CharSequence[] items = {"Orientada", "Confusa", "Palavras Inapropriadas", "Palavras Incompreensivas", "Nenhuma"};
+        final CharSequence[] items = {getString(R.string.msg_glasgow_resp_verbal_orientada), getString(R.string.msg_glasgow_resp_verbal_confusa), getString(R.string.msg_glasgow_resp_verbal_palavras_inapropriadas), getString(R.string.msg_glasgow_resp_verbal_palavras_incompreensivas), getString(R.string.msg_glasgow_resp_verbal_nenhuma)};
 
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("Selecione");
+        builder.setTitle(getString(R.string.msg_selecione));
         builder.setItems(items, new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int item) {
                 etRespostaVerbal.setText(items[item]);

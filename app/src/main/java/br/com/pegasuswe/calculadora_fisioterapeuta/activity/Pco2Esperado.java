@@ -62,7 +62,7 @@ public class Pco2Esperado extends BaseCalculoActivity {
 
             shareString = "PCO² Esperado\n"+"Acidose Metalólica = "+resultAcidose+"\nAlcalose Metabólica = "+resultAlcalose;
 
-            registrarCalculo("Acidose Metalólica = "+resultAcidose+"\nAlcalose Metabólica = "+resultAlcalose, nomeCalculo);
+            registrarCalculo(getString(R.string.msg_acidose_metabolica)+resultAcidose+getString(R.string.msg_alcalose_metabolica)+resultAlcalose, nomeCalculo);
         }
 
     }

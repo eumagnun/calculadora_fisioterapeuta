@@ -82,7 +82,7 @@ public class PeMaxActivity extends BaseCalculoActivity {
             long age = etAge.getText().toString() == null || "".equals(etAge.getText().toString()) ? 0 : Long.parseLong(etAge.getText().toString());
 
             if(age < 20 || age > 80) {
-                Toast.makeText(this, "A idade deve estar entre 20 e 80 anos", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, getString(R.string.msg_intervalo_idade), Toast.LENGTH_SHORT).show();
             }else{
 
                 String nomeCalculo = getString(R.string.pemax);
@@ -101,8 +101,8 @@ public class PeMaxActivity extends BaseCalculoActivity {
 
                     registrarCalculo(tvResult.getText().toString()+"\n"+tvResult2.getText().toString(), nomeCalculo);
 
-                    shareString = getString(R.string.pemax) + "-Cálculo Padrão = " + String.valueOf(result);
-                    shareString += "\n"+getString(R.string.pemax) + "-Cálculo 2010 = " + String.valueOf(result2);
+                    shareString = getString(R.string.pemax) + getString(R.string.msg_calculo_padrao) + String.valueOf(result);
+                    shareString += "\n"+getString(R.string.pemax) + getString(R.string.msg_calculo_2010) + String.valueOf(result2);
 
                 } else if (scFem.isChecked()) {
 
@@ -116,8 +116,8 @@ public class PeMaxActivity extends BaseCalculoActivity {
 
                     registrarCalculo(tvResult.getText().toString()+"\n"+tvResult2.getText().toString(), nomeCalculo);
 
-                    shareString = getString(R.string.pemax) + "-Cálculo Padrão = " + String.valueOf(result);
-                    shareString += "\n"+getString(R.string.pemax) + "-Cálculo 2010 = " + String.valueOf(result2);
+                    shareString = getString(R.string.pemax) + getString(R.string.msg_calculo_padrao) + String.valueOf(result);
+                    shareString += "\n"+getString(R.string.pemax) + getString(R.string.msg_calculo_2010)  + String.valueOf(result2);
                 }
             }
         }

@@ -125,7 +125,7 @@ public class PeMaxActivity extends BaseCalculoActivity {
 
 
     private void initADMob(){
-        MobileAds.initialize(this, "ca-app-pub-5007246500618998/5880660069");
+        
         mAdView = findViewById(R.id.adView);
 
         AdRequest adRequest = new AdRequest.Builder().addTestDevice("889E178D15F2793ACAF1D4F866C416D9").build();

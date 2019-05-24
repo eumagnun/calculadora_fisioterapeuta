@@ -48,7 +48,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:layout_below="@+id/txtViewHeader"
-                        android:hint="Volume Corrente"
+                        android:hint="@string/volume_corrente"
                         android:inputType="numberDecimal"
                         android:maxLines="1"
                         android:paddingLeft="20dp" />
@@ -65,7 +65,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:layout_below="@+id/txtViewHeader"
-                        android:hint="Complacência Estática"
+                        android:hint="@string/complac_ncia_est_tica"
                         android:inputType="numberDecimal"
                         android:maxLines="1"
                         android:paddingLeft="20dp" />
@@ -91,7 +91,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:layout_below="@+id/txtViewHeader"
-                        android:hint="Pressão Platô"
+                        android:hint="@string/press_o_plat"
                         android:inputType="numberDecimal"
                         android:maxLines="1"
                         android:paddingLeft="20dp" />
@@ -137,7 +137,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:background="@color/colorPrimary"
-                        android:text="Calcular"
+                        android:text="@string/calcular"
                         android:textAllCaps="false"
                         android:textColor="#FFF"
                         android:textSize="22dp" />
@@ -158,7 +158,7 @@
                     android:layout_height="wrap_content"
                     android:paddingTop="10dp"
                     android:paddingBottom="10dp"
-                    android:text="Informação: "
+                    android:text="@string/informa_o"
                     android:textStyle="bold" />
 
                 <LinearLayout
@@ -169,18 +169,18 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Cálculo Drive Pressure" />
+                        android:text="@string/c_lculo_drive_pressure" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Cálculo A: Volume Corrente / Complacência Estática" />
+                        android:text="@string/c_lculo_a_volume_corrente_complac_ncia_est_tica" />
 
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Cálculo B:Pressão Platô - Peep" />
+                        android:text="@string/c_lculo_b_press_o_plat_peep" />
 
                 </LinearLayout>
 

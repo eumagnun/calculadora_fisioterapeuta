@@ -71,7 +71,7 @@
                         android:gravity="center"
                         android:paddingStart="10dp"
                         android:paddingEnd="10dp"
-                        android:text="Resultado"
+                        android:text="@string/resultado"
                         android:textSize="16sp" />
 
 
@@ -120,7 +120,7 @@
                         android:gravity="center"
                         android:paddingStart="10dp"
                         android:paddingEnd="10dp"
-                        android:text="Resultado"
+                        android:text="@string/resultado"
                         android:textSize="16sp" />
 
 
@@ -159,7 +159,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:background="@color/colorPrimary"
-                        android:text="Calcular"
+                        android:text="@string/calcular"
                         android:textAllCaps="false"
                         android:textColor="#FFF"
                         android:textSize="22dp" />
@@ -181,7 +181,7 @@
                     android:layout_height="wrap_content"
                     android:paddingTop="10dp"
                     android:paddingBottom="10dp"
-                    android:text="Informação: "
+                    android:text="@string/informa_o"
                     android:textStyle="bold" />
 
                 <ImageView

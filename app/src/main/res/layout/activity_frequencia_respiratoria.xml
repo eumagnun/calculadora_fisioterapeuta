@@ -47,7 +47,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:layout_below="@+id/txtViewHeader"
-                        android:hint="PaCO2 (conhecida)"
+                        android:hint="@string/paco2_conhecida"
                         android:inputType="numberDecimal"
                         android:maxLines="1"
                         android:paddingLeft="20dp" />
@@ -64,7 +64,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:layout_below="@+id/txtViewHeader"
-                        android:hint="FR (conhecida)"
+                        android:hint="@string/fr_conhecida"
                         android:inputType="numberDecimal"
                         android:maxLines="1"
                         android:paddingLeft="20dp" />
@@ -81,7 +81,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:layout_below="@+id/txtViewHeader"
-                        android:hint="PaCO2 (desejada)"
+                        android:hint="@string/paco2_desejada"
                         android:inputType="numberDecimal"
                         android:maxLines="1"
                         android:paddingLeft="20dp" />
@@ -109,7 +109,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:background="@color/colorPrimary"
-                        android:text="Calcular"
+                        android:text="@string/calcular"
                         android:textAllCaps="false"
                         android:textColor="#FFF"
                         android:textSize="22dp" />
@@ -130,7 +130,7 @@
                     android:layout_height="wrap_content"
                     android:paddingTop="10dp"
                     android:paddingBottom="10dp"
-                    android:text="Informação: "
+                    android:text="@string/informacao"
                     android:textStyle="bold" />
 
                 <ImageView

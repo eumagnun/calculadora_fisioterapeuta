@@ -72,7 +72,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:paddingTop="@dimen/default_side_margin"
-                android:text="Quer nos avaliar?"
+                android:text="@string/quer_nos_avaliar"
                 android:textColor="@color/colorPrimary"
                 android:textSize="22sp"
                 android:textStyle="bold" />
@@ -98,6 +98,18 @@
                 android:paddingBottom="@dimen/default_side_margin"
                 android:text="@string/about_app"
                 android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtPolitica"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:paddingBottom="@dimen/default_side_margin"
+                android:onClick="abrirPolitica"
+                android:text="@string/politica_de_privacidade"
+                android:textSize="16sp" />
+
 
 
         </LinearLayout>

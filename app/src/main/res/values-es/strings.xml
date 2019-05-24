@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Fisio Calc</string>
+    <string name="navigation_drawer_open">navigation_drawer_open</string>
+    <string name="navigation_drawer_close">navigation_drawer_close</string>
+    <string name="action_settings">action_settings</string>
+    <string name="title_activity_base">title_activity_base</string>
+    <string name="hello_blank_fragment">hello_blank_fragment</string>
+</resources>

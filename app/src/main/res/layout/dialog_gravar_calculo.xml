@@ -12,7 +12,6 @@
         android:background="@color/colorPrimary"
         android:gravity="center_horizontal"
         android:padding="15dp"
-        android:text="Nome do Calculo"
         android:textColor="@color/colorFonteBranca"
         android:textSize="20sp"
         android:textStyle="bold" />
@@ -84,7 +83,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:gravity="start|center_vertical"
-        android:hint="Identificador Paciente"
+        android:hint="@string/identificador_paciente"
         android:inputType="textEmailAddress"
         android:padding="10dp" />
 
@@ -103,7 +102,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="@color/colorAccent"
-            android:text="Cancelar"
+            android:text="@string/cancelar"
             android:textColor="@color/colorFonteBranca"
             android:textStyle="bold" />
 
@@ -113,7 +112,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="@color/colorAccent"
-            android:text="Salvar"
+            android:text="@string/salvar"
             android:textColor="@color/colorFonteBranca"
             android:textStyle="bold" />
 

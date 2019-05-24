@@ -73,7 +73,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal"
-                    android:text="Você não \n está logado!"
+                    android:text="@string/voc_n_o_n_est_1_logado"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 

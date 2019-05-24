@@ -51,7 +51,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:enabled="false"
-                            android:hint="Abertura Ocular"
+                            android:hint="@string/abertura_ocular"
                             android:inputType="text"
                             android:paddingLeft="10dp"
                             android:textColor="@color/colorPrimary"
@@ -91,7 +91,7 @@
                             android:layout_height="wrap_content"
                             android:editable="false"
                             android:enabled="false"
-                            android:hint="Resposta Verbal"
+                            android:hint="@string/resposta_verbal"
                             android:inputType="text"
                             android:paddingLeft="10dp"
                             android:textColor="@color/colorPrimary"
@@ -131,7 +131,7 @@
                             android:layout_height="wrap_content"
                             android:editable="false"
                             android:enabled="false"
-                            android:hint="Resposta Motora"
+                            android:hint="@string/resposta_motora"
                             android:inputType="text"
                             android:paddingLeft="10dp"
                             android:textColor="@color/colorPrimary"
@@ -187,7 +187,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:background="@color/colorPrimary"
-                        android:text="Calcular"
+                        android:text="@string/calcular"
                         android:textAllCaps="false"
                         android:textColor="#FFF"
                         android:textSize="22dp" />
@@ -207,25 +207,25 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingTop="10dp"
-                    android:text="Referência:"
+                    android:text="@string/refer_ncia"
                     android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="03 - 08 = Grave"
+                    android:text="@string/_03_08_grave"
                     android:textColor="#d41313" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="09 - 12 = Moderado"
+                    android:text="@string/_09_12_moderado"
                     android:textColor="#cfca28" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="13 - 15 = Leve"
+                    android:text="@string/_13_15_leve"
                     android:textColor="#58c65b" />
 
                 <TextView
@@ -233,7 +233,7 @@
                     android:layout_height="wrap_content"
                     android:paddingTop="10dp"
                     android:paddingBottom="10dp"
-                    android:text="Informação: "
+                    android:text="@string/informa_o"
                     android:textStyle="bold" />
 
                 <ImageView

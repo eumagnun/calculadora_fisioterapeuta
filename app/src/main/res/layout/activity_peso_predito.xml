@@ -52,7 +52,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
                         android:gravity="center_horizontal"
-                        android:text="Homem"
+                        android:text="@string/homem"
                         android:textSize="16sp" />
 
                     <android.support.v7.widget.SwitchCompat
@@ -78,7 +78,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
                         android:gravity="center_horizontal"
-                        android:text="Mulher"
+                        android:text="@string/mulher"
                         android:textSize="16sp" />
 
                     <android.support.v7.widget.SwitchCompat
@@ -111,7 +111,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:layout_below="@+id/txtViewHeader"
-                        android:hint="Altura (cm)"
+                        android:hint="@string/altura_cm"
                         android:inputType="number"
                         android:maxLines="1"
                         android:paddingLeft="20dp"
@@ -136,7 +136,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:enabled="false"
-                            android:hint="Volume por quilo (ml)"
+                            android:hint="@string/volume_por_quilo_ml"
                             android:inputType="text"
                             android:paddingLeft="10dp"
                             android:textColor="@color/colorPrimary"
@@ -176,7 +176,7 @@
                             android:layout_weight="1"
                             android:gravity="center"
                             android:padding="10dp"
-                            android:text="Peso"
+                            android:text="@string/peso"
                             android:textSize="16sp" />
 
 
@@ -240,7 +240,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:background="@color/colorPrimary"
-                        android:text="Calcular"
+                        android:text="@string/calcular"
                         android:textAllCaps="false"
                         android:textColor="#FFF"
                         android:textSize="22dp" />

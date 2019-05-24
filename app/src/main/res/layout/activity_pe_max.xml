@@ -26,7 +26,7 @@
                 android:gravity="center_horizontal"
                 android:paddingTop="@dimen/default_side_margin"
                 android:paddingBottom="@dimen/default_side_margin"
-                android:text="Pressão Expiratória Máxima\n(P. E. máx)"
+                android:text="@string/press_o_expirat_ria_m_xima_n_p_e_m_x"
                 android:textSize="22sp" />
 
             <LinearLayout
@@ -52,7 +52,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
                         android:gravity="center_horizontal"
-                        android:text="Homem"
+                        android:text="@string/homem"
                         android:textSize="16sp" />
 
                     <android.support.v7.widget.SwitchCompat
@@ -78,7 +78,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
                         android:gravity="center_horizontal"
-                        android:text="Mulher"
+                        android:text="@string/mulher"
                         android:textSize="16sp" />
 
                     <android.support.v7.widget.SwitchCompat
@@ -147,7 +147,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:background="@color/colorPrimary"
-                        android:text="Calcular"
+                        android:text="@string/calcular"
                         android:textAllCaps="false"
                         android:textColor="#FFF"
                         android:textSize="22dp" />
@@ -168,7 +168,7 @@
                     android:layout_height="wrap_content"
                     android:paddingTop="10dp"
                     android:paddingBottom="10dp"
-                    android:text="Informação: "
+                    android:text="@string/informa_o"
                     android:textStyle="bold" />
 
                 <LinearLayout
@@ -179,35 +179,35 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Fórmula Pemáx(cmH2O) - Versão Padrão" />
+                        android:text="@string/f_rmula_pem_x_cmh2o_vers_o_padr_o" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Homens = 165,4 – 0,81 x idade" />
+                        android:text="@string/homens_165_4_0_81_x_idade" />
 
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:paddingBottom="20dp"
-                        android:text="Mulheres = 115,6 – 0,61 x idade" />
+                        android:text="@string/mulheres_115_6_0_61_x_idade" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Fórmula Pemáx(cmH2O) - Versão 2010" />
+                        android:text="@string/f_rmula_pem_x_cmh2o_vers_o_2010" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Homens = -1,26 × idade + 183,31" />
+                        android:text="@string/homens_1_26_idade_183_31" />
 
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Mulheres = -0,68 × idade + 119,35" />
+                        android:text="@string/mulheres_0_68_idade_119_35" />
 
                 </LinearLayout>
 

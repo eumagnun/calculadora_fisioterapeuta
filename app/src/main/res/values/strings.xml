@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Fisio Calc</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
@@ -9,7 +9,7 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="pimax">Pressão Inspiratória Máxima (P. I. máx)</string>
+    <string name="pimax" tools:ignore="MissingTranslation">Pressão Inspiratória Máxima (P. I. máx)</string>
     <string name="pemax">Pressão Expiratória Máxima – (P. E. máx)</string>
     <string name="cep">Complacência Estática Pulmonar</string>
     <string name="cdp">Complacência Dinâmica Pulmonar</string>
@@ -42,7 +42,7 @@
     <string name="sobre_o_app_tile">Sobre o App</string>
     <string name="observacao">Este aplicativo oferece cálculos voltados a área de fisioterápia porém não substitui o conhecimento de um profissional.  A qualquer momento um calculo pode vir a ser depreciado sem prévio aviso.  Em casos de divergências, ou quando estiver com alguma dúvida, a opinião de um profissional deverá prevalecer.\nFicarei grato se puder encaminhar suas sugestões </string>
     <string name="importante">Importante</string>
-    <string name="build">Data versão: 25/12/2018 23:01</string>
+    <string name="build">Data versão: 23/05/2019 22:36</string>
     <string name="capacidade_vital">Capacidade Vital</string>
     <string name="pesoPredito">Peso Predito</string>
     <string name="pco2_esperado">PCO²Esperado</string>
@@ -93,9 +93,61 @@
     <string name="mulher">Mulher</string>
     <string name="idade">Idade</string>
     <string name="altura_cm">Altura (cm)</string>
-    <string name="calcular">Calcular</string>
     <string name="informa_o">Informação:</string>
     <string name="formula_capacidade_vital_homem">Homens:CV = 0,05211 - 0,022 x idade -3,60 x altura (cm)</string>
     <string name="formula_capacidade_vital_mulher">Mulheres:CV = 0,4111 - 0,018 x idade - 2,69 x altura (cm)</string>
+    <string name="calcular">Calcular</string>
+    <string name="informacao">Informação:</string>
+    <string name="paco2_conhecida">PaCO2 (conhecida)</string>
+    <string name="fr_conhecida">FR (conhecida)</string>
+    <string name="paco2_desejada">PaCO2 (desejada)</string>
+    <string name="voc_n_o_n_est_1_logado">Você não está logado!</string>
+    <string name="paciente">Paciente:</string>
+    <string name="identificador_paciente">Identificador Paciente</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="salvar">Salvar</string>
+    <string name="press_o_inspirat_ria_m_xima_n_p_i_m_x">Pressão Inspiratória Máxima (P. I. máx)</string>
+    <string name="mulheres_0_46_idade_74_25">Mulheres = -0,46 × idade + 74,25</string>
+    <string name="homens_1_24_idade_232_37">Homens = -1,24 × idade + 232,37</string>
+    <string name="f_rmula_pim_x_cmh2o_vers_o_2010">Fórmula Pimáx(cmH2O) - Versão 2010</string>
+    <string name="mulheres_0_49_idade_110_4">Mulheres = -0,49 × idade + 110,4</string>
+    <string name="homens_0_80_idade_155_3">Homens = -0,80 × idade + 155,3</string>
+    <string name="f_rmula_pim_x_cmh2o_vers_o_padr_o">Fórmula Pimáx(cmH2O) - Versão Padrão</string>
+    <string name="volume_por_quilo_ml">Volume por quilo (ml)</string>
+    <string name="peso">Peso</string>
+    <string name="press_o_expirat_ria_m_xima_n_p_e_m_x">Pressão Expiratória Máxima (P. E. máx)</string>
+    <string name="f_rmula_pem_x_cmh2o_vers_o_padr_o">Fórmula Pemáx(cmH2O) - Versão Padrão</string>
+    <string name="homens_165_4_0_81_x_idade">Homens = 165,4 – 0,81 x idade</string>
+    <string name="mulheres_115_6_0_61_x_idade">Mulheres = 115,6 – 0,61 x idade</string>
+    <string name="f_rmula_pem_x_cmh2o_vers_o_2010">Fórmula Pemáx(cmH2O) - Versão 2010</string>
+    <string name="homens_1_26_idade_183_31">Homens = -1,26 × idade + 183,31</string>
+    <string name="mulheres_0_68_idade_119_35">Mulheres = -0,68 × idade + 119,35</string>
+    <string name="complacencia_estatica">Complacencia Estatica</string>
+    <string name="tobin">Tobin</string>
+    <string name="sao2">SaO2</string>
+    <string name="c_lculo_iwi">Cálculo IWI</string>
+    <string name="complac_ncia_est_tica_x_sao2_tobin_n_nvalores_25_sucesso_no_desmame"><![CDATA[(Complacência estática x SaO2) / Tobin  Valores > 25 = Sucesso no desmame]]></string>
+    <string name="quer_nos_avaliar">Quer nos avaliar?</string>
+    <string name="voc_n_o_n_est_logado">Você não está logado!</string>
+    <string name="titulo">Titulo</string>
+    <string name="disconectar">Disconectar</string>
+    <string name="abertura_ocular">Abertura Ocular</string>
+    <string name="resposta_verbal">Resposta Verbal</string>
+    <string name="resposta_motora">Resposta Motora</string>
+    <string name="refer_ncia">Referência:</string>
+    <string name="_03_08_grave">03 - 08 = Grave</string>
+    <string name="_09_12_moderado">09 - 12 = Moderado</string>
+    <string name="_13_15_leve">13 - 15 = Leve</string>
+    <string name="pao2_conhecida">PaO2 (conhecida)</string>
+    <string name="fio2_conhecida">FiO2 (conhecida)</string>
+    <string name="pao2_desejada">PaO2 (desejada)</string>
+    <string name="complac_ncia_est_tica">Complacência Estática</string>
+    <string name="press_o_plat">Pressão Platô</string>
+    <string name="c_lculo_drive_pressure">Cálculo Drive Pressure</string>
+    <string name="c_lculo_a_volume_corrente_complac_ncia_est_tica">Cálculo A: Volume Corrente / Complacência Estática</string>
+    <string name="c_lculo_b_press_o_plat_peep">Cálculo B:Pressão Platô - Peep</string>
+    <string name="resultado">Resultado</string>
+    <string name="politica_de_privacidade">Politica de Privacidade</string>
+
 
 </resources>

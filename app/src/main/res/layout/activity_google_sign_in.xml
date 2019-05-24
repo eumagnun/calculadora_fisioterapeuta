@@ -20,13 +20,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/title_bottom_margin"
-            android:text="Titulo"
+            android:text="@string/titulo"
             android:theme="@style/ThemeOverlay.MyTitleText" />
 
         <TextView
             android:id="@+id/status"
             style="@style/ThemeOverlay.MyTextDetail"
-            android:text="Sair" />
+            android:text="@string/sair" />
 
         <TextView
             android:id="@+id/detail"
@@ -59,7 +59,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Sair"
+                android:text="@string/sair"
                 android:theme="@style/ThemeOverlay.MyDarkButton" />
 
             <Button
@@ -68,7 +68,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Disconectar"
+                android:text="@string/disconectar"
                 android:theme="@style/ThemeOverlay.MyDarkButton" />
         </LinearLayout>
 
